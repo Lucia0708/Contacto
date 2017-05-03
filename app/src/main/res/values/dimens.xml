@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="et_tamaño">15dp</dimen>
+    <dimen name="rl_width">260dp</dimen>
+    <dimen name="tam_btn_calendario">130dp</dimen>
+    <dimen name="tam_titulo_confirmar_datos">30dp</dimen>
+    <dimen name="tam_titulo_height_confirmar">100dp</dimen>
+    <dimen name="tam_height_datos">50dp</dimen>
+    <dimen name="tam_datos">20dp</dimen>
+    <dimen name="pad_left">20dp</dimen>
+    <dimen name="margen_boton">35dp</dimen>
+</resources>

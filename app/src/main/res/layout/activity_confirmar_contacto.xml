@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lucia.contacto.ConfirmarContactoActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/tv_confirmar_datos"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tam_titulo_height_confirmar"
+            android:text="@string/tv_titulo_confirmar_datos"
+            android:textSize="@dimen/tam_titulo_confirmar_datos"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tam_height_datos"
+            android:text="Lucia de Santos velasco"
+            android:textSize="@dimen/tam_datos"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/pad_left"
+            android:layout_below="@id/tv_confirmar_datos"
+            android:gravity="center_vertical"/>
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/tv_nombre">
+
+
+            <TextView
+                android:id="@+id/tv_fecha_nacimiento1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tam_height_datos"
+                android:textSize="@dimen/tam_datos"
+                android:text="@string/tv_fecha_nacimiento"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/pad_left"
+                android:gravity="center"
+                />
+
+        <TextView
+            android:id="@+id/tv_fecha_nacimiento2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tam_height_datos"
+            android:textSize="@dimen/tam_datos"
+            android:textStyle="bold"
+            android:gravity="center"
+          />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/LinearLayout1">
+
+
+            <TextView
+                android:id="@+id/tv_telefono1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tam_height_datos"
+                android:textSize="@dimen/tam_datos"
+                android:text="@string/tv_telefono"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/pad_left"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_telefono2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tam_height_datos"
+                android:textSize="@dimen/tam_datos"
+                android:text="449 9127196"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/LinearLayout2">
+
+
+            <TextView
+                android:id="@+id/tv_email1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tam_height_datos"
+                android:textSize="@dimen/tam_datos"
+                android:text="@string/tv_email"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/pad_left"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_email2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tam_height_datos"
+                android:textSize="@dimen/tam_datos"
+                android:text="lucia@hotmail.com"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/LinearLayout3">
+
+
+            <TextView
+                android:id="@+id/tv_descripcion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/tam_datos"
+                android:text="@string/tv_descripcion"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/pad_left"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_descripcion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/tam_datos"
+                android:text="prueba de impresion de datos muchas papabras a ver como se ve"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_editar_datos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_editar_datos"
+            android:gravity="center"
+            android:layout_below="@+id/LinearLayout4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margen_boton"
+            android:onClick="llama_editar_datos"/>
+
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

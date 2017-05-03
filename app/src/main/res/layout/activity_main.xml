@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lucia.contacto.MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_Nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/et_nombre"
+                android:textSize="@dimen/et_tamaño"
+                android:textStyle="bold"
+               />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/rl_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_fecha_nacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/et_fecha_nacimiento"
+                android:textSize="@dimen/et_tamaño"
+                android:textAlignment="center"
+                android:drawableBottom="@color/colorCalendario"
+                android:drawableTint="@color/colorCalendario"
+                />
+
+            <DatePicker
+                android:id="@+id/dp_Fecha_nac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_fecha_nacimiento"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:endYear="2017"
+                android:isScrollContainer="true"
+                android:spinnersShown="true"
+                android:startYear="1920"
+                android:background="@color/colorCalendario"
+
+                >
+
+            </DatePicker>
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="@dimen/tam_btn_calendario"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/dp_Fecha_nac"
+                android:text="@string/btn_cancel"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="@dimen/tam_btn_calendario"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/dp_Fecha_nac"
+                android:text="@string/btn_ok"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_Telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/et_telefono"
+                android:textSize="@dimen/et_tamaño"
+                android:textStyle="bold"
+              />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/et_email"
+                android:textSize="@dimen/et_tamaño"
+                android:textStyle="bold" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_Descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/et_descripcion"
+                android:textSize="@dimen/et_tamaño"
+                android:textStyle="bold" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_Siguiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="llama_confirmar_datos"
+            android:gravity="bottom"
+            android:text="@string/btn_siguiente"
+            android:textSize="@dimen/et_tamaño"
+            android:textStyle="bold"
+            android:textAlignment="center"
+
+
+            />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+
